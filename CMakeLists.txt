@@ -13,8 +13,8 @@ $<$<CXX_COMPILER_ID:AppleClang,Clang,GNU>:-Wall -Wextra>
 endfunction()
 
 # Collect all source files in the 'src' and 'include' directories
-file(GLOB SOURCES "source/*.cpp")
-file(GLOB HEADERS "include/*.h")
+file(GLOB SOURCES "src/*.cpp")
+file(GLOB HEADERS "inc/*.h")
 
 add_executable(Raytracing ${SOURCES} ${HEADERS})
 target_include_directories(Raytracing PUBLIC include ext/stb)
