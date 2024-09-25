@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(glm REQUIRED)
 
 file(GLOB SOURCES "src/*.cpp")
+file(GLOB HEADERS "inc/*.h")
 
-add_executable(Raytray ${SOURCES})
+add_executable(Raytray ${SOURCES} ${HEADERS})
 target_include_directories(Raytray PRIVATE "${CMAKE_SOURCE_DIR}/inc")
 target_link_libraries(Raytray PRIVATE glm::glm)
