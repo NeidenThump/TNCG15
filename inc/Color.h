@@ -1,8 +1,11 @@
 #pragma once
 
-struct ColorRGB {
+/// <summary>
+/// Color represented with three double (DBL) precicion values 
+/// </summary>
+struct ColorDBL {
 	double r, g, b;
 
-	ColorRGB() : r(0.0), g(0.0), b(0.0) {};
-	ColorRGB(double red, double green, double blue) : r(red), g(green), b(blue) {};
+	ColorDBL() : r(0.0), g(0.0), b(0.0) {};
+	ColorDBL(double red, double green, double blue) : r(red), g(green), b(blue) {};
 };
